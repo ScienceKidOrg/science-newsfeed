@@ -43,7 +43,7 @@ def main():
         all_news.extend(filtered_entries)
     print("<ul>")
     for news in all_news:
-        print("<li><a href=",news['url'],"><strong>Title:</strong>", news['title'],"</a> </br>")
+        print("<li><a href=",news['url'],">", news['title'],"</a> </br>")
         #print("URL:", news['url'])
         print("<strong>Abstract:</strong>", news['abstract'])
         print("</br>")
