@@ -1,3 +1,6 @@
-https://www.sciencedaily.com/rss/all.xml
+https://www.sciencedaily.com/rss/kids_teens.xml
 https://www.newscientist.com/section/news/feed/
-http://rss.sciam.com/ScientificAmerican-Global
+https://www.sciencenewsforstudents.org/latest/rss
+http://feeds.feedburner.com/NatGeoKids
+https://spaceplace.nasa.gov/feed/
+http://www.tweentribune.com/rss/teens/
