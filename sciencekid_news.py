@@ -30,8 +30,8 @@ def filter_news(entries, days_threshold, keywords):
 
 def main():
     rss_file = 'websites.txt'
-    days_threshold = 7
-    keywords = ['science', 'space', 'technology','school','kids']  # Example keywords
+    days_threshold = 31
+    keywords = ['science', 'space', 'technology','school','kids','spacex','biology','physics','gravity','constellation','chemistry', 'dna','math', 'pollution','biology','electronics','programming','artificial intelligence']  # Example keywords
 
     with open(rss_file, 'r') as f:
         rss_urls = f.readlines()
@@ -41,13 +41,13 @@ def main():
         entries = get_feed_entries(rss_url.strip())
         filtered_entries = filter_news(entries, days_threshold, keywords)
         all_news.extend(filtered_entries)
-    print("<ul>")
+    print("<html><ul>")
     for news in all_news:
         print("<li><a href=",news['url'],">", news['title'],"</a> </br>")
         #print("URL:", news['url'])
         print("<strong>Abstract:</strong>", news['abstract'])
         print("</br>")
-    print("</ul>")
+    print("</ul></html>")
 
 if __name__ == "__main__":
     main()
